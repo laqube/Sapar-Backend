@@ -8,7 +8,7 @@ class UserController extends Controller
 {
     //Show Register/Create Form
     public function create() {
-        return view('pages.list.refistration.sn');
+        return view('resources.views.layouts.sn');
     }
 
     public function store(Reguest $reguest)

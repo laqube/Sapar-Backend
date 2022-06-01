@@ -32,7 +32,7 @@
                             <i class="fa fa-lock"></i>
                             <input name="password" type="password" class="form-control"  size="15" maxlength="15" placeholder="Password"> </div>
                         <button class="btn btn-secondary mt-4">
-                            <a href="shop.html" style="color:#EEE"><input type="submit" name="submit" value="Sign up"></a></button>
+                            <a href="/Shop" style="color:#EEE"><input type="submit" name="submit" value="Sign up"></a></button>
                         <div class="text-center mt-3"> <span>Or continue with these social profile</span> </div>
                         <div class="d-flex justify-content-center mt-4"> <span class="social"><i class="fa fa-google"></i></span> <span class="social"><i class="fa fa-facebook"></i></span> <span class="social"><i class="fa fa-twitter"></i></span> <span class="social"><i class="fa fa-linkedin"></i></span> </div>
                         <div class="text-center mt-4"> <span>Already a member?</span> <a href="/sn" class="text-decoration-none" style="color:#EEEEEE">Login</a> </div>

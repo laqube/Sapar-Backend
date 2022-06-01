@@ -30,9 +30,9 @@ Route::get('/Turkestan', 'App\Http\Controllers\PagesController@Turkestan');
 
 //Route::get('/rg', 'App\Http\Controllers\PagesController@rg');
 
-Route::get('/rg', [App\Http\Controllers\UserController::class, 'create']);
+//Route::get('/rg', [App\Http\Controllers\UserController::class, 'create']);
 
-Route::get('/sn', [App\Http\Controllers\UserController::class, 'create']);
+//Route::get('/sn', [App\Http\Controllers\UserController::class, 'create']);
 
 //Route::get('/sn', 'App\Http\Controllers\PagesController@sn');
 
@@ -42,7 +42,7 @@ Route::get('/Shop', 'App\Http\Controllers\PagesController@Shop');
 
 Route::get('/p1Almaty', 'App\Http\Controllers\PagesController@p1Almaty');
 
-Route::get('Services', 'App\Http\Controllers\PagesController@sn');
+//Route::get('Services', 'App\Http\Controllers\PagesController@sn');
 
 
 //? recreate the sample by the other thinks

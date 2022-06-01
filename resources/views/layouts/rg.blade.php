@@ -1,25 +1,47 @@
 <html>
 <head>
-    <title>Регистрация</title>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="pics/icons/mount.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Josefin+Sans:wght@100&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="registration.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
-<body>
-<h2>Регистрация</h2>
-<form action="save_user.php" method="post">
-    <!--**** save_user.php - это адрес обработчика.  То есть, после нажатия на кнопку "Зарегистрироваться", данные из полей  отправятся на страничку save_user.php методом "post" ***** -->
-    <p>
-        <label>Ваш логин:<br></label>
-        <input name="login" type="text" size="15" maxlength="15">
-    </p>
-    <!--**** В текстовое поле (name="login" type="text") пользователь вводит свой логин ***** -->
-    <p>
-        <label>Ваш пароль:<br></label>
-        <input name="password" type="password" size="15" maxlength="15">
-    </p>
-    <!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** -->
-    <p>
-        <input type="submit" name="submit" value="Зарегистрироваться">
-        <!--**** Кнопочка (type="submit") отправляет данные на страничку save_user.php ***** -->
-    </p></form>
+<body style="text-align: center;">
+<h2>Registration</h2>
+
+    <div class="container mt-5 mb-5">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="card px-5 py-5" style="margin: 5rem; "> <span class="circle"><i class="fa fa-check"></i></span>
+                    <form action="save_user.php" method="post">
+                        <div class="form-input">
+                            <i class="fa fa-envelope"></i>
+                            <input name="login" class="form-control" type="text" size="15" maxlength="15" placeholder="Email address" > </div>
+                        <div class="form-input">
+                            <i class="fa fa-user"></i>
+                            <input name="nickname" class="form-control" type="text" size="16" maxlength="16" placeholder="User name"> </div>
+                        <div class="form-input">
+                            <i class="fa fa-lock"></i>
+                            <input name="password" type="password" class="form-control"  size="15" maxlength="15" placeholder="Password"> </div>
+                        <button class="btn btn-secondary mt-4">
+                            <a href="shop.html" style="color:#EEE"><input type="submit" name="submit" value="Sign up"></a></button>
+                        <div class="text-center mt-3"> <span>Or continue with these social profile</span> </div>
+                        <div class="d-flex justify-content-center mt-4"> <span class="social"><i class="fa fa-google"></i></span> <span class="social"><i class="fa fa-facebook"></i></span> <span class="social"><i class="fa fa-twitter"></i></span> <span class="social"><i class="fa fa-linkedin"></i></span> </div>
+                        <div class="text-center mt-4"> <span>Already a member?</span> <a href="/sn" class="text-decoration-none" style="color:#EEEEEE">Login</a> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @yield('content')
 </body>
 </html>

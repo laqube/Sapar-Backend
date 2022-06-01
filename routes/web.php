@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'App\Http\Controllers\PagesController@main');
+//Route::get('/', 'App\Http\Controllers\PagesController@main');
 
-Route::get('/Welcome', 'App\Http\Controllers\PagesController@Welcome');
+Route::get('/', 'App\Http\Controllers\PagesController@Welcome');
 
 Route::get('/Aktobe', 'App\Http\Controllers\PagesController@Aktobe');
 
@@ -28,13 +28,13 @@ Route::get('/Turkestan', 'App\Http\Controllers\PagesController@Turkestan');
 
 //Route::get('/travel', 'App\Http\Controllers\PagesController@travel');
 
-//Route::get('/rg', 'App\Http\Controllers\PagesController@rg');
+Route::get('/rg', 'App\Http\Controllers\PagesController@rg');
 
 //Route::get('/rg', [App\Http\Controllers\UserController::class, 'create']);
 
 //Route::get('/sn', [App\Http\Controllers\UserController::class, 'create']);
 
-//Route::get('/sn', 'App\Http\Controllers\PagesController@sn');
+Route::get('/sn', 'App\Http\Controllers\PagesController@sn');
 
 Route::get('/Help', 'App\Http\Controllers\PagesController@Help');
 

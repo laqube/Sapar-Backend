@@ -361,7 +361,7 @@
 
     // random background
     $(document).ready(function() {
-        var bgArray = ['1.png', '3.png'];
+        var bgArray = ['1.png'];
         var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
         var path = 'pics/icons/';
         var imageUrl = path + bg;

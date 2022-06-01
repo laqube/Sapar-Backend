@@ -36,14 +36,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#srv">SERVICES</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="background-color: #222831; color: #EEEEEE">ACCOUNT</a>
-                    <ul class="dropdown-menu" >
-                        <li><a class="dropdown-item" href="/rg">Sign up</a></li>
-                        <li><a class="dropdown-item" href="/sn">Login</a></li>
-                        <li><a class="dropdown-item" href="/Help">Help</a></li>
-                    </ul>
+            @guest
+                <li class="nav-item">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </li>
+            @else
+                <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="background-color: #222831; color: #EEEEEE">ACCOUNT</a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="/rg">Sign up</a></li>
+                            <li><a class="dropdown-item" href="/sn">Login</a></li>
+                            <li><a class="dropdown-item" href="/Help">Help</a></li>
+                        </ul>
+                    </li>
+                @endguest
                 <li class="d-lg-none d-md-none nav-item">
                     <a class="nav-link text-white" href="#" value="PLAY" onclick="play()">SALEM :D</a>
                 </li>
@@ -114,27 +121,22 @@
 </div>
 
 
-
-<!-- /ABOUTUS -->
-
 <!-- SERVICES -->
 
 <div class="container-fluid">
-
-    <div class="row parax1 plenka"></div>
     <!-- Services -->
     <div class="container">
         <div class="row" style="background-color:#EEEEEE">
             <div class="container text-center border-top border-3" >
                 <div class="row" id="srv" style="padding-top:5%">
-                    <h3>WE ARE <mark style="color: #7BC74D; background-color: #EEEEEE">PROUD</mark> TO SERVE YOU</h1>
+                    <h3>WE ARE <mark style="color: #7BC74D; background-color: #EEEEEE">PROUD</mark> TO SERVE YOU</h3>
                 </div>
 
                 <div class="row my-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12 my-5">
-                                <div class="card shadow-sm " data-aos="zoom-in-up" style="background-color:#222831; border-transparent; height:100% ">
+                                <div class="card shadow-sm " data-aos="zoom-in-up" style="background-color:#222831; height:100% ">
                                     <i class="fa fa-handshake-o fa-5x my-5 mx-5" aria-hidden="true" style="color:#EEEEEE"></i>
                                     <div class="card-body">
                                         <h5 class="card-title" style="color:#7BC74D">Personalised tours</h5>
@@ -143,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 my-5">
-                                <div class="card shadow-sm" data-aos="zoom-in-up" style="background-color:#222831; border-transparen; height:100% ">
+                                <div class="card shadow-sm" data-aos="zoom-in-up" style="background-color:#222831; height:100% ">
                                     <i class="fa fa-diamond fa-5x my-5" aria-hidden="true" style="color:#EEEEEE"></i>
                                     <div class="card-body">
                                         <h5 class="card-title" style="color:#7BC74D">Reasonable pricing</h5>
@@ -152,7 +154,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 my-5">
-                                <div class="card shadow-sm" data-aos="zoom-in-up" style="background-color:#222831; border-transparen; height:100% ">
+                                <div class="card shadow-sm" data-aos="zoom-in-up" style="background-color:#222831; height:100% ">
                                     <i class="fa fa-map-o fa-5x my-5" aria-hidden="true" style="color:#EEEEEE"></i>
                                     <div class="card-body">
                                         <h5 class="card-title" style="color:#7BC74D">Local tourism</h5>

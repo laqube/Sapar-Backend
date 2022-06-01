@@ -74,10 +74,7 @@
 </div>
 
 <!-- /BIC PIC -->
-<!-- BUTTON TO RETURN TO TOP -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-    <i class="fa fa-arrow-circle-o-up fa-3" aria-hidden="true"></i>
-</button>
+
 <!-- ABOUTUS -->
 
 <div class="container-fluid" style="background-color: #EEEEEE">

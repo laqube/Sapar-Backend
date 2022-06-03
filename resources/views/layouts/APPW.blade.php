@@ -36,11 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#srv">SERVICES</a>
                 </li>
-            @guest
-                <li class="nav-item">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </li>
-            @else
+
                 <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="background-color: #222831; color: #EEEEEE">ACCOUNT</a>
@@ -50,10 +46,8 @@
                             <li><a class="dropdown-item" href="/Help">Help</a></li>
                         </ul>
                     </li>
-                @endguest
-                <li class="d-lg-none d-md-none nav-item">
-                    <a class="nav-link text-white" href="#" value="PLAY" onclick="play()">SALEM :D</a>
-                </li>
+
+
             </ul>
         </div>    <!-- navbar elements -->
     </div>   <!-- cont fluid -->
